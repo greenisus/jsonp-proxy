@@ -15,7 +15,7 @@ Request params (all must be URL escaped):
 
 jsonp => callback(response);
 u => uri
-m => HTTP method (GET, POST, etc) default GET
+m => HTTP method (GET, POST, PUT, DELETE, HEAD, etc) default GET
 h => request headers hash in json, url encoded
 b => request body
 
