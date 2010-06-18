@@ -5,7 +5,7 @@ Dead simple Sinatra app to make REST API calls and respond in a JSONP style.
 
 Example:
 
-http://localhost:4567/servers/jsonp?jsonp=callback&u=https%3A//auth.api.rackspacecloud.com/v1.0
+http://localhost:4567/?jsonp=callback&u=https%3A//auth.api.rackspacecloud.com/v1.0
 
 If you included proper headers, you would get something like this back:
 
