@@ -1,0 +1,24 @@
+jsonp-proxy
+Mike Mayo <mike@overhrd.com> twitter: @greenisus
+
+Dead simple Sinatra app to make REST API calls and respond in a JSONP style.
+
+Example:
+
+http://localhost:4567/servers/jsonp?jsonp=callback&u=https%3A//auth.api.rackspacecloud.com/v1.0
+
+If you included proper headers, you would get something like this back:
+
+callback({ the.response.json });
+
+Request params (all must be URL escaped):
+
+jsonp => callback(response);
+u => uri
+m => HTTP method (GET, POST, etc) default GET
+h => request headers hash in json, url encoded
+b => request body
+
+Callback argument looks like this:
+{ status: 200, headers: { header: hash }, body: 'body text' }
+
